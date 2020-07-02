@@ -1,38 +1,99 @@
-#  Pass Locker
+#  Pass-Locker
 
+#### 28/06/2020
+
+#### By **Kerovin Oddi(https://github.com/kerovinoddi)**
 
 ## Description
 
-This is a python application that allows users to store password for all all their accounts.It can generate a password for the account you wish to set its credentials or you can type one for yourself.
-It works on the terminal via use of some predefined `short codes`
+Pass-Locker is a python application that allows users to store password for all their accounts.It can generate a password for the account.
 
 * cu - create Password Locker account
-* du - display the names of the current Password Locker users
-* lg - log into Pasword Locker account
-* cc - create and store a new credential
+* lg - log into account
+* du - display the names of the users
+* gc - create a credential with a generated password
+* cc - create a new credential
 * dc - display credentials for a logged in user
-* dl - delete a credential for a logged in user
-* gc - create and store a credential with a generated password
-* ex - exit for Password Locker account and also exit the terminal app
+* dl - delete a credential for a logged in use
+* ex - exit the terminal app
 
 ## Behaviour Driven Development
 
-1.Feature Unregistered User
+  **Search for users**
 
-  **Scenario:Search for users**
+    Since there is a code for search, when you type short code for search it will return for you app users.
 
-    Given There is a option to search for users in pass locker
-    When i type a short code
-    Then i can see users who are using the app if there are any
-  
-2.Feature create account
+   **Creating an Account**
 
-   **Scenario:Creating an Account**
+    There is a short code for creating a new account
+    When you type the short code
+    You should see a field to enter your details
+    When you are done you'll see your account details
 
-    Given there is a short code to create a new account
-    When i type the short code
-    Then i should see prompt field to enter my details
-    And after i'm done receive a prompt of my account info
+   **Login**
+
+   There is short code for log in. When you enter your registered details and they are confirmed to be true then you should logged in succesfully
+
+
+   **Creating a new Credential**
+
+    After you have successfully logged in, there is a short code to create a new credential
+    You should see prompt fields to create a new credentials
+    When you submit the details
+    You should see a confirmation message
+
+
+   **Displaying My Credentials**
+    If you type the code for displaying credentials you should receive  save credential.
+
+
+
+   **Generating Random Password**
+
+    If you wanted an auto generated password for your credentials
+    Then you should see a prompt to enter your credential name
+    And a prompt to enter the password length
+    When you submit your new credential
+    Then you should see your created credential with the random password
+
+   **Deleting a Saved Credential**
+
+    Since there is a code to delete a credential
+    When you type it
+    Then you should be prompted to enter the credential name
+    Then you should receive the credential back if it exists
+    Then you should be asked to either delete or abort
+    When you choose to delete
+    Then you should receive a notification of deletion
+
+   **Exiting The Application**
+
+    Since there is a code to exit the app
+    When you type it
+    Then you should logged out of the account
+    Then you should be returned to the main page
+    When you type the short code again
+    Then you app should close 
+
+
+## Prerequisites
+
+* Download and install Python3.6
+
+## Setup/Installation
+
+* Clone this repository(https://github.com/kerovinoddi/python-pass-locker) 
+* Open a terminal window  navigate to the app folder and type {./run.py} to run the application
+* Use the short codes provided to navigate in the application
+
+## Technologies Used
+
+* Python3.6
+
+### License
+
+Copyright (c) 2020  **Kerovin Oddi (https://github.com/kerovinoddi)**
+
 
 3.Feature Login
 
@@ -52,9 +113,7 @@ It works on the terminal via use of some predefined `short codes`
     And there is a short code to create a new credential
     Then i should see prompt fields to create a new credentials
     When i submit the details
-    Then i should see a message conf*irming my submitted credentials
-
-5.Feature Displaying credentials
+    Then i should see a message conf*irming my submitted credential
 
    **Scenario:Displaying My Credentials**
         
@@ -65,9 +124,7 @@ It works on the terminal via use of some predefined `short codes`
 
     Given i use the short code for displaying credentials
     And no credentials were saved
-    Then i should receive a message informing me of the absence of credentials 
-
-6.Feature Auto-Generated Password
+    Then i should receive a message informing me of the absence of credential
 
    **Scenario:Generating Random Password**
 
@@ -75,9 +132,7 @@ It works on the terminal via use of some predefined `short codes`
     Then i should see a prompt to enter my credential name
     And a prompt to enter the password length
     When i submit my new credential
-    Then i should see my created credential with the random password
-
-7.Feature Delete Credential
+    Then i should see my created credential with the random passwor
 
    **Scenario:Deleting a Saved Credential**
 
@@ -89,22 +144,17 @@ It works on the terminal via use of some predefined `short codes`
     When i choose to delete
     Then i should receive a confirmation of the delete action
 
-8.Feature Exiting The Account
-
    **Scenario:Exiting The Application**
 
     Given there is a code to exit the app
     
 * Open a terminal window  navigate to the app folder and type `./run.py` to run the application
-* Use the short codes provided to navigate in the application
-* Enjoy
-
-## Known Bugs
-
-No known bugs
+* Use the short codes provided to navigate in the applicatio
 
 ## Technologies Used
 
 * Python3.6
+
+Copyright (C) 2020 **Kerovin Oddi https://kerovinoddi.github.io/Pass-Locker/kerovinoddi**
 
 
