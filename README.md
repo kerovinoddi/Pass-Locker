@@ -1,8 +1,5 @@
 #  Pass Locker
 
-#### 19/07/2019
-
-#### By **[Sunday Brian](https://github.com/Sundaybrian)**
 
 ## Description
 
@@ -98,19 +95,7 @@ It works on the terminal via use of some predefined `short codes`
 
     Given there is a code to exit the app
     When i type it
-    Then i should logged out of my account
-    Then i should be returned to the main page
-    When i type the short code again
-    Then i app should close 
-
-
-## Prerequisites
-
-* Download and install Python3.6
-
-## Setup/Installation
-
-* Clone [this repository](https://github.com/Sundaybrian/python-pass-locker) 
+    
 * Open a terminal window  navigate to the app folder and type `./run.py` to run the application
 * Use the short codes provided to navigate in the application
 * Enjoy
