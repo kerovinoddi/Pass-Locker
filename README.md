@@ -94,7 +94,6 @@ It works on the terminal via use of some predefined `short codes`
    **Scenario:Exiting The Application**
 
     Given there is a code to exit the app
-    When i type it
     
 * Open a terminal window  navigate to the app folder and type `./run.py` to run the application
 * Use the short codes provided to navigate in the application
@@ -108,7 +107,4 @@ No known bugs
 
 * Python3.6
 
-### License
-
-MIT (c) 2019  **[Sunday Brian](https://github.com/Sundaybrian)**
 
